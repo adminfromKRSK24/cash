@@ -15,7 +15,13 @@ cd cash
 ```bash
 docker compose up -d --build
 ```
+http://127.0.0.1:8000/admin/
 
+```
+креды для доступа:
+log: dev
+pass: 123
+```
 ### Доп.команды
 ```commandline
 
