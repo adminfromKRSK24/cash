@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    container_name: history_web
+    restart: always
+    volumes:
+      - .:/app
+      - sqlite_data:/app/db_data   # база будет жить в volume
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env   # <-- вот здесь подключаем все переменные из .env
+
+volumes:
+  sqlite_data:
