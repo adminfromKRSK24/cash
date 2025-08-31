@@ -1,8 +1,24 @@
+
+![img](./img/history.png)
+
+### Для запуска выполните следующее`
+- Шаг 1
+```bash
+git clone git@github.com:adminfromKRSK24/cash.git
+cd cash
+```
+- Шаг 2 
+```
+поместить файл .env в директорию cash
+```
+- Шаг 3
 ```bash
 docker compose up -d --build
 ```
 
+### Доп.команды
 ```commandline
+
 docker compose down --rmi all --volumes --remove-orphans
 docker ps -a | grep history_web # Проверить состояние контейнера:
 `docker logs history_web --tail 50` # Посмотреть логи контейнера, чтобы понять причину перезапуска:
